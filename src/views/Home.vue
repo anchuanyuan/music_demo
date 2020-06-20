@@ -82,7 +82,7 @@ export default {
       if (!this.keyword) return this.$message.error("请先输入关键词哦")
       if (!this.sourceValue) return this.$message.error("选个源吧")
       this.$http
-        .get("http://www.xiaoa.xin/musicdown/music/api.php", {
+        .get("https://www.xiaoa.xin/musicdown/music/api.php", {
           params: {
             keyword: this.keyword,
             filter: "list",
@@ -117,7 +117,7 @@ export default {
     },
     getMusic(musicID) {
       this.$http
-        .get("//www.xiaoa.xin/musicdown/music/api.php?", {
+        .get("https://www.xiaoa.xin/musicdown/music/api.php?", {
           params: {
             musicID,
             filter: "music",
