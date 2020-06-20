@@ -117,7 +117,7 @@ export default {
     },
     getMusic(musicID) {
       this.$http
-        .get("http://www.xiaoa.xin/musicdown/music/api.php?", {
+        .get("//www.xiaoa.xin/musicdown/music/api.php?", {
           params: {
             musicID,
             filter: "music",
